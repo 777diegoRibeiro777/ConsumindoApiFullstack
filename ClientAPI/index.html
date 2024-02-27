@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroFarmaciaAPI Client</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <h1>CadastroFarmaciaAPI</h1>
+
+    <nav>
+        <ul>
+          <li><button class="nav-item active" onclick="showAllContent()">Home</button></li>
+          <li><button class="nav-item" onclick="showContent('content1')">Clientes</button></li>
+          <li><button class="nav-item" onclick="showContent('content2')">Entrega Produtos</button></li>
+          <li><button class="nav-item" onclick="showContent('content3')">Farmacêuticos</button></li>
+          <li><button class="nav-item" onclick="showContent('content4')">Fornecedores</button></li>
+          <li><button class="nav-item" onclick="showContent('content5')">Prescrições Médicas</button></li>
+          <li><button class="nav-item" onclick="showContent('content6')">Produtos Farmacêuticos</button></li>
+          <li><button class="nav-item" onclick="showContent('content7')">Vendas Produtos</button></li>
+        </ul>
+    </nav>
+
+    <div id="content1" class="container content">
+            <table id="Data-Clientes">
+                <h2>Clientes</h2>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Numero de Telefone</th>
+                        <th>Email</th>
+                        <th>Prescrição Medica</th>
+                        <th>Venda Produto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+    </div>
+
+    <div id="content2" class="container content">
+            <table id="Data-EntregaProdutos">
+                <h2>Entrega Produtos</h2>
+                <thead>
+                    <tr>
+                        <th>ID Entrega</th>
+                        <th>ID Fornecedor</th>
+                        <th>Produtos Entregues</th>
+                    <th>Quantidade Entregue</th>
+                    <th>Data de Entrega</th>
+                    <th>Fornecedor</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="content3" class="container content">
+        <table id="Data-Farmaceuticos">
+            <h2>Farmacêuticos</h2>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Número de Registro Profissional</th>
+                    <th>Número de Telefone</th>
+                    <th>Email</th>
+                    <th>Prescrição Medica</th>
+                    <th>Venda de Produtos</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="content4" class="container content">
+        <table id="Data-Fornecedores">
+            <h2>Fornecedores</h2>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Número de Registro Profissional</th>
+                    <th>Número de Telefone</th>
+                    <th>Email</th>
+                    <th>Prescrição Medica</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="content5" class="container content">
+        <table id="Data-PrescricoesMedicas">
+            <h2>Prescrições Médicas</h2>
+            <thead>
+                <tr>
+                    <th>ID Prescrição</th>
+                    <th>ID Paciente</th>
+                    <th>ID Farmacêutico</th>
+                    <th>Data da Prescrição</th>
+                    <th>Medicamentos Prescritos</th>
+                    <th>Farmacêutico</th>
+                    <th>Paciente</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="content6" class="container content">
+        <table id="Data-ProdutosFarmaceuticos">
+            <h2>Produtos Farmacêuticos</h2>
+            <thead>
+                <tr>
+                    <th>ID Produto</th>
+                    <th>Nome Produto</th>
+                    <th>Descrição</th>
+                    <th>Fabricante</th>
+                    <th>Preço</th>
+                    <th>Quantidade em Estoque</th>
+                    <th>Data de Validade</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="content7" class="container content">
+        <table id="Data-VendasProdutos">
+            <h2>Vendas Produtos</h2>
+            <thead>
+                <tr>
+                    <th>ID Venda</th>
+                    <th>Data Venda</th>
+                    <th>ID Cliente</th>
+                    <th>ID Farmacêutico</th>
+                    <th>Valor Total</th>
+                    <th>Cliente</th>
+                    <th>Farmacêutico</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
